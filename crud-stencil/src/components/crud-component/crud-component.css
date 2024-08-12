@@ -1,0 +1,283 @@
+:host {
+  display: block;
+  padding: 20px;
+  background-color: #f5f7fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  text-align: center;
+  color: #2A3F54;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.form {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #2A3F54;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+select {
+  width: 50%;
+  padding: 8px;
+  margin: 5px 0 20px;
+  border: 1px solid #d1d1d1;
+  border-radius: 6px;
+  font-size: 15px;
+  color: #555;
+  background-color: #f9f9f9;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  box-sizing: border-box;
+}
+input[type="date"],
+input[type="time"],
+select {
+  width: 10%;
+  padding: 8px;
+  margin: 5px 0 15px;
+  border: 1px solid #d1d1d1;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #555;
+  background-color: #f9f9f9;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+select:focus {
+  border-color: #1ABB9C;
+  background-color: #fff;
+  outline: none;
+}
+
+input[type="date"],
+input[type="time"] {
+  width: 10%;
+  display: inline-block;
+  background-color: #f9f9f9;
+}
+
+input[type="date"] {
+  margin-right: 10px;
+}
+
+select {
+  appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg%20xmlns="http://www.w3.org/2000/svg"%20viewBox="0%200%204%205"><path%20fill="none"%20stroke="%23666"%20stroke-width="1.5"%20d="M2%200L0%202h4zM0%203l2%202%202-2z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 12px top 50%;
+  background-size: 12px 6px;
+  padding-right: 24px;
+}
+
+select:focus {
+  border-color: #1ABB9C;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+select {
+  background-color: #f1f3f6; /* Fondo más claro */
+  border: 1px solid #c0c4c9; /* Borde sutil */
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05); /* Sombra interna ligera */
+}
+
+input[type="text"]:hover,
+input[type="date"]:hover,
+input[type="time"]:hover,
+select:hover {
+  background-color: #fff;
+  border-color: #a3a7ac;
+}
+
+
+.button-group {
+  text-align: center;
+}
+
+button {
+  background-color: #1ABB9C;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 6px;
+  padding: 12px 18px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 auto;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #000000;
+  transform: translateY(-2px);
+  color: #1ABB9C;
+}
+
+button.create-button {
+  background-color: #1ABB9C;
+}
+
+button.update-button {
+  background-color: #1ABB9C;
+  color: #000000;
+}
+
+.create-button:hover{
+  background-color: #000000;
+  color: #1ABB9C;
+}
+.update-button:hover{
+  background-color: #000000;
+  color: #1ABB9C;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  font-size: 12px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #2A3F54;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+tr:hover {
+  background-color: #e0f7fa;
+}
+
+.details-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Fondo oscuro con opacidad */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Asegura que la modal esté por encima de otros elementos */
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para darle profundidad */
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out; /* Animación suave al aparecer */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #888;
+  transition: color 0.3s ease;
+}
+
+.close:hover {
+  color: #555;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  border-bottom: 2px solid #1ABB9C; /* Línea sutil debajo del título */
+  padding-bottom: 10px;
+}
+
+.modal-content p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.modal-content p strong {
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  input[type="date"],
+  input[type="time"] {
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+
+  .button-group {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  button {
+    color: #000000;
+    margin-top: 10px;
+    margin-left: 0;
+    width: 100%;
+  }
+}
